@@ -1,0 +1,32 @@
+.library-layout {
+  display: flex;
+}
+
+/* Push content right so it does NOT hide under Sidebar */
+.library-content {
+  margin-left: 260px; 
+  padding: 20px;
+  width: 100%;
+}
+
+/* Blog card styling */
+.library-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.library-card button {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.library-card button:hover {
+  background: #444;
+}

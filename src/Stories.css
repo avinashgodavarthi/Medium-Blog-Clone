@@ -1,0 +1,142 @@
+/* PAGE CONTAINER */
+.stories-container {
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh;
+    margin-left: 280px;
+    
+}
+
+/* MEDIUM TITLE */
+.medium-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* LAYOUT */
+.stories-layout {
+    display: flex;
+    gap: 30px;
+}
+
+/* RIGHT CONTENT AREA */
+.stories-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+/* HEADING */
+.stories-heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* EACH STORY CARD */
+.story-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.story-card:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* TITLE */
+.story-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* DESCRIPTION */
+.story-description {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* FULL SCREEN OVERLAY */
+.popup-overlay {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+/* POPUP BOX */
+.popup-box {
+   width: 60%;
+  max-height: 80vh;      /* important */
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+   position: absolute;
+  top: 15px;
+  right: 15px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.popup-title {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.popup-description {
+  font-size: 18px;
+  line-height: 1.6rem;
+}
+
+/* Animation */
+@keyframes popupShow {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.popup-scroll {
+  overflow-y: auto;
+  padding-right: 10px;
+  max-height: 70vh;      /* limit height */
+}
+
+/* Smooth scrollbar */
+.popup-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+.popup-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}

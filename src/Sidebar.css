@@ -1,0 +1,54 @@
+/* Sidebar Container */
+.sidebar-container {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  border-right: 1px solid #e5e5e5;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title */
+.sidebar-container h1:first-child {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Each sidebar option */
+.sidebar-item {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+  font-weight: 500;
+}
+
+/* Icon */
+.sidebar-item svg {
+  font-size: 22px;
+}
+
+/* Hover effect */
+.sidebar-item:hover {
+  background: black;
+  color: white;
+  transform: translateX(5px);
+}
+
+/* Active (selected page) */
+.sidebar-active {
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 600;
+  transform: translateX(5px);
+}

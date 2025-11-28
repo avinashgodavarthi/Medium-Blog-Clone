@@ -1,0 +1,97 @@
+/* Main layout */
+.home-container {
+  display: flex;
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+/* Create blog icon */
+.create-icon {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* Page content */
+.page-content {
+  margin-left: 250px;         /* MATCH SIDEBAR WIDTH */
+  padding: 30px;
+  width: calc(100% - 250px);  /* auto adjust */
+}
+
+/* Section title */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+/* Blog card */
+.blog-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 0 auto 25px auto;
+  max-width: 1100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.blog-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.blog-desc {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Save button */
+.save-btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.save-icon {
+  font-size: 26px;
+}
+
+/* Search box */
+.search-box input {
+  width: 350px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-left: 350px;
+}
+
+/* Suggestion dropdown */
+.suggestions-box {
+  background: white;
+  width: 350px;
+  margin-top: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-left: 350px;
+}
+
+.suggestions-box p {
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.suggestions-box p:hover {
+  background: #f0f0f0;
+}

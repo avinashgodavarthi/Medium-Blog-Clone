@@ -1,0 +1,93 @@
+/* Page Layout */
+.create-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #fafafa;
+    padding: 20px 40px;
+    font-family: "Georgia", serif;
+}
+
+/* Medium Title */
+.medium-title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Editor Container */
+.editor-container {
+    width: 70%;
+    margin-left: 300px; 
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Editor Heading */
+.editor-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: "Georgia", serif;
+}
+
+/* Labels */
+.label {
+    display: block;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Input fields */
+.input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.input:focus {
+    border-bottom: 2px solid black;
+}
+
+/* Description Text Area */
+.textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    resize: vertical;
+    font-family: "Georgia", serif;
+}
+
+.textarea:focus {
+    border-color: black;
+}
+
+/* Publish Button */
+.publish-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.publish-btn:hover {
+    background: #333;
+}
